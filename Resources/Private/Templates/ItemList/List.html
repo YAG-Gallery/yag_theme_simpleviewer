@@ -1,22 +1,24 @@
-<script type="text/javascript">
-var searchStr, searchStrParams, parameters, parameter, i;
-var searchStr = window.location.search.substr(1);
-var searchStrParams = searchStr.split('&');
-parameters = {};
-for (i = 0; i < searchStrParams.length; i += 1) {
-  parameter = searchStrParams[i].split('=');
-  parameters[parameter[0]] = decodeURIComponent(parameter[1]);
-}
+<!--  
+Template for rendering the list as simpleviewer XML
 
-var svCoreURL = '';
-var svMobile = true;
-var svGalleryPath = parameters.galleryURL.substr(0, parameters.galleryURL.lastIndexOf('/') + 1);
-</script>
-<script type="text/javascript" src="js/simpleviewer.js"></script>
+Here is a list of objects / variables that can be accessed in this template:
+
+Tx_PtExtlist_Domain_Model_List_ListData listData  List of items in album
+
+@package YAG Theme SimpleViewer
+@author Daniel Lienert <daniel@lienert.cc>
+-->
+
+<script type="text/javascript" src="typo3conf/ext/yag_theme_simpleviewer/Resources/Public/SimpleViewer/js/simpleviewer.js"></script>
 <script type="text/javascript">
-$(document).ready(function () {
-  SV.simpleviewer.load('sv-container', '100%', '100%', parameters.bg, false, {galleryURL: parameters.galleryURL || 'gallery.xml'});
+var flashvars = {};
+flashvars.galleryURL = escape("{f:uri.page(pageType:'89657201')}");
+var params = {};
+params.wmode = "transparent";
+var attributes = {};
+attributes.id = "svInstance";
+jQuery(document).ready(function () {
+SV.simpleviewer.load("sv-container", "100%", "100%", "222222", true, flashvars, params, attributes);
 });
 </script>
-	
 <div id="sv-container"></div>

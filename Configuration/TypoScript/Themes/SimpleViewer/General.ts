@@ -6,11 +6,7 @@
 # @subpackage Typoscript
 ####################################################
 
-page.includeCSS {
-	theme = typo3conf/ext/yag/Resources/Public/CSS/theme.css
-}
-
-plugin.tx_yag.settings.themes.default {
+plugin.tx_yag.settings.themes.simpleViewer {
 	
 	resolutionConfigs {
 		thumb {
@@ -23,4 +19,20 @@ plugin.tx_yag.settings.themes.default {
 			width = 800
 		}
 	}
+	
+	controller {
+		ItemList {
+			list.template = EXT:yag_theme_simpleviewer/Resources/Private/Templates/ItemList/List.html
+			xmlList.template = EXT:yag_theme_simpleviewer/Resources/Private/Templates/ItemList/XMLList.html
+		}
+	}
+}
+
+plugin.tx_yag.settings.controller.ItemList.xmlList.template = EXT:yag_theme_simpleviewer/Resources/Private/Templates/ItemList/XmlList.html
+	
+# SimpleViewer XML
+YAGXML_SimpleViewer< YAGXML
+YAGXML_SimpleViewer {
+	typeNum = 89657201
+	10 < tt_content.list.20.yag_xmllist
 }
