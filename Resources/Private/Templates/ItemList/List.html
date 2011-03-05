@@ -1,0 +1,22 @@
+<script type="text/javascript">
+var searchStr, searchStrParams, parameters, parameter, i;
+var searchStr = window.location.search.substr(1);
+var searchStrParams = searchStr.split('&');
+parameters = {};
+for (i = 0; i < searchStrParams.length; i += 1) {
+  parameter = searchStrParams[i].split('=');
+  parameters[parameter[0]] = decodeURIComponent(parameter[1]);
+}
+
+var svCoreURL = '';
+var svMobile = true;
+var svGalleryPath = parameters.galleryURL.substr(0, parameters.galleryURL.lastIndexOf('/') + 1);
+</script>
+<script type="text/javascript" src="js/simpleviewer.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+  SV.simpleviewer.load('sv-container', '100%', '100%', parameters.bg, false, {galleryURL: parameters.galleryURL || 'gallery.xml'});
+});
+</script>
+	
+<div id="sv-container"></div>

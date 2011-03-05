@@ -1,0 +1,77 @@
+<simpleviewergallery
+	
+	galleryStyle="MODERN"
+	title="SimpleViewer Gallery"
+	textColor="FFFFFF"
+	frameColor="FFFFFF"
+	frameWidth="20"
+	thumbPosition="LEFT"
+	thumbColumns="3"
+	thumbRows="3"
+	showOpenButton="TRUE"
+	showFullscreenButton="TRUE"	
+	maxImageWidth="640"
+	maxImageHeight="640"
+	useFlickr="false"
+	flickrUserName=""
+	flickrTags=""
+	languageCode="AUTO"
+	languageList=""		
+	imagePath="images/"
+	thumbPath="thumbs/"
+	
+>
+
+
+
+	<image imageURL="typo3conf/ext/yag/Resources/Public/Samples/demo_800_600-001.jpg" thumbURL="typo3temp/yag/00/1.jpg" linkURL="" linkTarget="" >
+		<caption>Photo 1</caption>	
+	</image>
+
+
+	<image imageURL="typo3conf/ext/yag/Resources/Public/Samples/demo_800_600-002.jpg" thumbURL="typo3temp/yag/00/2.jpg" linkURL="" linkTarget="" >
+		<caption>Photo 2</caption>	
+	</image>
+
+
+	<image imageURL="typo3conf/ext/yag/Resources/Public/Samples/demo_800_600-003.jpg" thumbURL="typo3temp/yag/00/3.jpg" linkURL="" linkTarget="" >
+		<caption>Photo 3</caption>	
+	</image>
+
+	<image imageURL="typo3conf/ext/yag/Resources/Public/Samples/demo_800_600-004.jpg" thumbURL="typo3temp/yag/00/4.jpg" linkURL="" linkTarget="" >
+		<caption>Photo 4</caption>	
+	</image>
+
+
+	<image imageURL="typo3conf/ext/yag/Resources/Public/Samples/demo_800_600-005.jpg" thumbURL="typo3temp/yag/00/5.jpg" linkURL="" linkTarget="" >
+		<caption>Photo 5</caption>	
+	</image>
+
+
+	<image imageURL="typo3conf/ext/yag/Resources/Public/Samples/demo_800_600-006.jpg" thumbURL="typo3temp/yag/00/6.jpg" linkURL="" linkTarget="" >
+		<caption>Photo 6</caption>	
+	</image>
+
+
+	<image imageURL="typo3conf/ext/yag/Resources/Public/Samples/demo_800_600-007.jpg" thumbURL="typo3temp/yag/00/7.jpg" linkURL="" linkTarget="" >
+		<caption>Photo 7</caption>	
+	</image>
+
+
+	<image imageURL="typo3conf/ext/yag/Resources/Public/Samples/demo_800_600-008.jpg" thumbURL="typo3temp/yag/00/8.jpg" linkURL="" linkTarget="" >
+
+		<caption>Photo 8</caption>	
+	</image>
+
+
+	<image imageURL="typo3conf/ext/yag/Resources/Public/Samples/demo_800_600-009.jpg" thumbURL="typo3temp/yag/00/9.jpg" linkURL="" linkTarget="" >
+		<caption>Photo 9</caption>	
+	</image>
+
+		<!--  Plugin inserted: [end] -->
+			</div>
+
+	<!--  CONTENT ELEMENT, uid:39/list [end] -->
+		</div>
+	</div>
+</div>
