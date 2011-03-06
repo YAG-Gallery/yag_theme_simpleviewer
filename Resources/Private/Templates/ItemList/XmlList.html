@@ -16,18 +16,18 @@ Tx_PtExtlist_Domain_Model_List_ListData listData               List of items in 
 
 <simpleviewergallery
 	
-	galleryStyle="MODERN"
-	title="SimpleViewer Gallery"
-	textColor="FFFFFF"
-	frameColor="FFFFFF"
-	frameWidth="20"
-	thumbPosition="LEFT"
-	thumbColumns="3"
-	thumbRows="3"
-	showOpenButton="TRUE"
-	showFullscreenButton="TRUE"	
-	maxImageWidth="640"
-	maxImageHeight="640"
+	galleryStyle="{config.origSettings.themes.simpleViewer.galleryStyle}"
+	 {f:if(condition: config.origSettings.themes.simpleViewer.showAlbumTitle, then: 'title="{album.name}"')}
+	textColor="{config.origSettings.themes.simpleViewer.textColor}"
+	frameColor="{config.origSettings.themes.simpleViewer.frameColor}"
+	frameWidth="{config.origSettings.themes.simpleViewer.frameWidth}"
+	thumbPosition="{config.origSettings.themes.simpleViewer.thumbPosition}"
+	thumbColumns="{config.origSettings.themes.simpleViewer.thumbColumns}"
+	thumbRows="{config.origSettings.themes.simpleViewer.thumbRows}"
+	showOpenButton="{config.origSettings.themes.simpleViewer.showOpenButton}"
+	showFullscreenButton="{config.origSettings.themes.simpleViewer.showFullscreenButton}"	
+	maxImageWidth="{config.origSettings.themes.simpleViewer.resolutionConfigs.medium.width}"
+	maxImageHeight="{config.origSettings.themes.simpleViewer.resolutionConfigs.medium.height}"
 	useFlickr="false"
 	flickrUserName=""
 	flickrTags=""
@@ -35,13 +35,13 @@ Tx_PtExtlist_Domain_Model_List_ListData listData               List of items in 
 	languageList=""		
 	imagePath="images/"
 	thumbPath="thumbs/"
-	
 >
 
 <f:for each="{listData}" key="rowIndex" as="listRow">
-
-	<image imageURL="{yag:imageLink(item:'{listRow.image.value}')}" thumbURL="{yag:imageLink(item:'{listRow.image.value}' resolutionName:'thumb')}" linkURL="" linkTarget="" >
-		<caption>{listRow.image.value.title}</caption>	
+	<image imageURL="{yag:imageLink(item:'{listRow.image.value}' resolutionName:'medium')}" thumbURL="{yag:imageLink(item:'{listRow.image.value}' resolutionName:'thumb')}" linkURL="" linkTarget="" >
+		<f:if condition="{config.origSettings.themes.simpleViewer.showImageTitle}">
+			<caption>{listRow.image.value.title}</caption>	
+		</f:if>
 	</image>
 </f:for>
 

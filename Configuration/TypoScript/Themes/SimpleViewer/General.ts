@@ -17,6 +17,7 @@ plugin.tx_yag.settings.themes.simpleViewer {
 		
 		medium {
 			width = 800
+			height = 800
 		}
 	}
 	
@@ -26,6 +27,24 @@ plugin.tx_yag.settings.themes.simpleViewer {
 			xmlList.template = EXT:yag_theme_simpleviewer/Resources/Private/Templates/ItemList/XMLList.html
 		}
 	}
+	
+	# Simpleviewer configuration
+	showAlbumTitle = 1
+	showImageTitle = 1
+	
+	# Simpleviewer flash configuration
+	
+	# MODERN, COMPACT, CLASSIC
+	galleryStyle = MODERN	
+	
+	thumbColumns = 4
+	thumbRows = 4
+	frameColor = 0x2F2F2F
+	textColor = 0x2F2F2F
+	frameWidth = 2
+	thumbPosition = LEFT
+	showOpenButton = TRUE
+	showFullscreenButton = TRUE
 }
 
 plugin.tx_yag.settings.controller.ItemList.xmlList.template = EXT:yag_theme_simpleviewer/Resources/Private/Templates/ItemList/XmlList.html
@@ -36,3 +55,4 @@ YAGXML_SimpleViewer {
 	typeNum = 89657201
 	10 < tt_content.list.20.yag_xmllist
 }
+
