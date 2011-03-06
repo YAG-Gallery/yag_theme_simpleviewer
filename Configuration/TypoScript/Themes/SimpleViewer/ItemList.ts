@@ -7,6 +7,6 @@
 # @subpackage Typoscript
 ####################################################
 
-plugin.tx_yag.settings.themes.simpleviewer.itemList {
+plugin.tx_yag.settings.themes.simpleViewer.itemList {
 	itemsPerPage = 0
 }

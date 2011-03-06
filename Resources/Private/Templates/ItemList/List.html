@@ -12,13 +12,13 @@ Tx_PtExtlist_Domain_Model_List_ListData listData  List of items in album
 <script type="text/javascript" src="typo3conf/ext/yag_theme_simpleviewer/Resources/Public/SimpleViewer/js/simpleviewer.js"></script>
 <script type="text/javascript">
 var flashvars = {};
-flashvars.galleryURL = escape("{f:uri.page(pageType:'89657201')}");
+flashvars.galleryURL = escape("{f:uri.action(pageType:'89657201', arguments:'{contextIdentifier:yagContext.identifier}', pluginName:'xmllist')}");
 var params = {};
 params.wmode = "transparent";
 var attributes = {};
 attributes.id = "svInstance";
 jQuery(document).ready(function () {
-SV.simpleviewer.load("sv-container", "100%", "100%", "222222", true, flashvars, params, attributes);
+SV.simpleviewer.load("sv-container", "{config.origSettings.themes.simpleViewer.galleryWidth}", "{config.origSettings.themes.simpleViewer.galleryHeight}", "{config.origSettings.themes.simpleViewer.backgroundColor}", {config.origSettings.themes.simpleViewer.backgroundTransparent}, flashvars, params, attributes);
 });
 </script>
 <div id="sv-container"></div>
