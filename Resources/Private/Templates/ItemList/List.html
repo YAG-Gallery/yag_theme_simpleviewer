@@ -1,3 +1,5 @@
+{namespace extlist=Tx_PtExtlist_ViewHelpers}
+
 <!--  
 Template for rendering the list as simpleviewer XML
 
@@ -12,7 +14,7 @@ Tx_PtExtlist_Domain_Model_List_ListData listData  List of items in album
 <script type="text/javascript" src="typo3conf/ext/yag_theme_simpleviewer/Resources/Public/SimpleViewer/js/simpleviewer.js"></script>
 <script type="text/javascript">
 var flashvars = {};
-flashvars.galleryURL = escape("{f:uri.action(pageType:'89657201', arguments:'{contextIdentifier:yagContext.identifier}', pluginName:'xmllist')}");
+flashvars.galleryURL = escape("{extlist:uri.action(pageType:'89657201', arguments:'{contextIdentifier:yagContext.identifier}', pluginName:'xmllist')}");
 var params = {};
 params.wmode = "transparent";
 var attributes = {};
