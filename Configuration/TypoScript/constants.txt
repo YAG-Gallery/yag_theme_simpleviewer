@@ -1,0 +1,46 @@
+config.yag_theme_simpleviewer {
+	# cat=YAG:SimpleViewer/General/010; type=boolean; label=Show the title of the album
+	showAlbumTitle = 1
+	
+	# cat=YAG:SimpleViewer/General/020; type=boolean; label=Show the title of the image
+	showImageTitle = 1
+	
+	# cat=YAG:SimpleViewer/General/030; type=string; label=Width of the flash viewer
+	galleryWidth = 100%
+	
+	# cat=YAG:SimpleViewer/General/040; type=string; label=Height of the flash viewer
+	galleryHeight = 100%
+	
+	# cat=YAG:SimpleViewer/General/050; type=string; label=Background color of the flash viewer
+	backgroundColor = 222222
+	
+	# cat=YAG:SimpleViewer/General/060; type=boolean; label=Transparent background
+	backgroundTransparent = true
+	
+	# cat=YAG:SimpleViewer/General/070; type=options[MODERN,COMPACT,CLASSIC]; label=Style of the gallery.
+	galleryStyle = MODERN
+	
+	# cat=YAG:SimpleViewer/General/080; type=int; label=Thumb columns
+	thumbColumns = 4
+	
+	# cat=YAG:SimpleViewer/General/090; type=int; label=Thumb rows
+	thumbRows = 4
+	
+	# cat=YAG:SimpleViewer/General/100; type=string; label=Frame color
+	frameColor = 0x2F2F2F
+	
+	# cat=YAG:SimpleViewer/General/100; type=string; label=Text color
+	textColor = 0x2F2F2F
+	
+	# cat=YAG:SimpleViewer/General/120; type=int; label=Frame width
+	frameWidth = 2
+	
+	# cat=YAG:SimpleViewer/General/130;  type=options[LEFT,RIGHT]; label=Thumb Position
+	thumbPosition = LEFT
+	
+	# cat=YAG:SimpleViewer/General/140; type=boolean; label=Show open button
+	showOpenButton = true
+	
+	# cat=YAG:SimpleViewer/General/150; type=boolean; label=Show fullscreen button
+	showFullscreenButton = true
+}

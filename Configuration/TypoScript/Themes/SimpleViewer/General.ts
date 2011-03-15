@@ -30,31 +30,31 @@ plugin.tx_yag.settings.themes.simpleViewer {
 	
 	# Simpleviewer configuration
 	##################################
-	showAlbumTitle = 1
-	showImageTitle = 1
+	showAlbumTitle = {$config.yag_theme_simpleviewer.showAlbumTitle}
+	showImageTitle = {$config.yag_theme_simpleviewer.showImageTitle}
 	
 	# Simpleviewer embed configuration
 	##################################
-	galleryWidth = 100%
-	galleryHeight = 100%
-	backgroundColor = 222222
-	backgroundTransparent = true
+	galleryWidth = {$config.yag_theme_simpleviewer.galleryWidth}
+	galleryHeight = {$config.yag_theme_simpleviewer.galleryHeight}
+	backgroundColor = {$config.yag_theme_simpleviewer.backgroundColor}
+	backgroundTransparent = {$config.yag_theme_simpleviewer.backgroundTransparent}
 	
 	
 	# Simpleviewer flash configuration
 	##################################
 	
 	# MODERN, COMPACT, CLASSIC
-	galleryStyle = MODERN	
+	galleryStyle = {$config.yag_theme_simpleviewer.galleryStyle}	
 	
-	thumbColumns = 4
-	thumbRows = 4
-	frameColor = 0x2F2F2F
-	textColor = 0x2F2F2F
-	frameWidth = 2
-	thumbPosition = LEFT
-	showOpenButton = TRUE
-	showFullscreenButton = TRUE
+	thumbColumns = {$config.yag_theme_simpleviewer.thumbColumns}
+	thumbRows = {$config.yag_theme_simpleviewer.thumbRows}
+	frameColor = {$config.yag_theme_simpleviewer.frameColor}
+	textColor = {$config.yag_theme_simpleviewer.textColor}
+	frameWidth = {$config.yag_theme_simpleviewer.frameWidth}
+	thumbPosition = {$config.yag_theme_simpleviewer.thumbPosition}
+	showOpenButton = {$config.yag_theme_simpleviewer.showOpenButton}
+	showFullscreenButton = {$config.yag_theme_simpleviewer.showFullscreenButton}
 }
 
 plugin.tx_yag.settings.theme = simpleViewer
