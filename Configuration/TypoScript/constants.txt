@@ -38,9 +38,9 @@ config.yag_theme_simpleviewer {
 	# cat=YAG:SimpleViewer/General/130;  type=options[LEFT,RIGHT]; label=Thumb Position
 	thumbPosition = LEFT
 	
-	# cat=YAG:SimpleViewer/General/140; type=boolean; label=Show open button
-	showOpenButton = true
+	# cat=YAG:SimpleViewer/General/140; type=options[TRUE,FALSE]; label=Show open button
+	showOpenButton = TRUE
 	
-	# cat=YAG:SimpleViewer/General/150; type=boolean; label=Show fullscreen button
-	showFullscreenButton = true
+	# cat=YAG:SimpleViewer/General/150; type=options[TRUE,FALSE]; label=Show fullscreen button
+	showFullscreenButton = TRUE
 }
