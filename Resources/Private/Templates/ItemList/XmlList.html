@@ -1,6 +1,4 @@
-{namespace extlist=Tx_PtExtlist_ViewHelpers}
-{namespace yag=Tx_Yag_ViewHelpers}
-<extlist:comment>
+{namespace extlist=Tx_PtExtlist_ViewHelpers}{namespace yag=Tx_Yag_ViewHelpers}<extlist:comment>
 <!--  
 Template for rendering the list as simpleviewer XML
  
@@ -11,9 +9,7 @@ Tx_PtExtlist_Domain_Model_List_ListData listData               List of items in 
 @package YAG
 @author Daniel Lienert <daniel@lienert.cc>
 -->
-</extlist:comment>
-<?xml version="1.0" encoding="UTF-8"?>
-
+</extlist:comment><?xml version="1.0" encoding="UTF-8"?>
 <simpleviewergallery
 	
 	galleryStyle="{config.origSettings.themes.simpleViewer.galleryStyle}"
@@ -38,7 +34,7 @@ Tx_PtExtlist_Domain_Model_List_ListData listData               List of items in 
 >
 
 <f:for each="{listData}" key="rowIndex" as="listRow">
-	<image imageURL="{yag:link.image(item:'{listRow.image.value}' resolutionName:'medium')}" thumbURL="{yag:link.image(item:'{listRow.image.value}' resolutionName:'thumb')}" linkURL="" linkTarget="" >
+	<image imageURL="{yag:resource.image(item:'{listRow.image.value}' resolutionName:'medium')}" thumbURL="{yag:resource.image(item:'{listRow.image.value}' resolutionName:'thumb')}" linkURL="" linkTarget="" >
 		<f:if condition="{config.origSettings.themes.simpleViewer.showImageTitle}">
 			<caption>{listRow.image.value.title}</caption>	
 		</f:if>
