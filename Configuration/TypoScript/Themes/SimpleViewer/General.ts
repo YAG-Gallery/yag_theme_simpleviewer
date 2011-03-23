@@ -21,6 +21,8 @@ plugin.tx_yag.settings.themes.simpleViewer {
 		}
 	}
 	
+	includeCSS > 
+	
 	controller {
 		ItemList {
 			list.template = EXT:yag_theme_simpleviewer/Resources/Private/Templates/ItemList/List.html
