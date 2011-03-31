@@ -35,8 +35,10 @@ plugin.tx_yag.settings.themes.simpleViewer {
 	showAlbumTitle = {$config.yag_theme_simpleviewer.showAlbumTitle}
 	showImageTitle = {$config.yag_theme_simpleviewer.showImageTitle}
 	
+	
 	# Simpleviewer embed configuration
 	##################################
+	
 	galleryWidth = {$config.yag_theme_simpleviewer.galleryWidth}
 	galleryHeight = {$config.yag_theme_simpleviewer.galleryHeight}
 	backgroundColor = {$config.yag_theme_simpleviewer.backgroundColor}
