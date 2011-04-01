@@ -1,0 +1,2 @@
+  # cat=basic; type=string; label=Simpleviewer package path: Because it is not allowed to redistribute the simpleviewer package, you have to download it manually from http://simpleviewer.net/simpleviewer/ and extract it somewhere on your server (eg into the fileadmin). Set the path to the root directory of the simpleviewer package here. For further information have a look to the manual.   
+simpleViewerSourcePath = fileadmin/simpleViewer
