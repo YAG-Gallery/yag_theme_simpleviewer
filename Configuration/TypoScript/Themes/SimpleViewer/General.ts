@@ -10,14 +10,12 @@ plugin.tx_yag.settings.themes.simpleViewer {
 	
 	resolutionConfigs {
 		thumb {
-			width = 150
-			height = 
-			quality = 
+			maxW = 150
 		}
 		
 		medium {
-			width = 800
-			height = 800
+			maxW = 800
+			maxH = 800
 		}
 	}
 	
